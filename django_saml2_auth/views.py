@@ -20,7 +20,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.template import TemplateDoesNotExist
 from django.http import HttpResponseRedirect
-from django.utils.http import is_safe_url
+from django.utils.http import url_has_allowed_host_and_scheme as is_safe_url
 
 from rest_auth.utils import jwt_encode
 
